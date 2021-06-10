@@ -1,0 +1,266 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0;
+}
+
+.promo {
+  width: 1120px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+}
+
+.promo .promo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__block-one {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+  height: 500px;
+  background-color: #35734F;
+  overflow: hidden;
+}
+
+.promo__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.promo__logo .logo__title {
+  margin-left: 50px;
+  margin-top: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.promo__logo .logo__subtitle {
+  margin-left: 50px;
+  margin-top: 320px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  position: relative;
+  left: 60px;
+  bottom: 370px;
+}
+
+.promo__image .image {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  z-index: 1;
+}
+
+.circle__color {
+  background-color: #428A60;
+  width: 398px;
+  height: 398px;
+  border-radius: 200px;
+}
+
+.circle__border:after {
+  content: "";
+  border: 20px solid #428A60;
+  width: 688px;
+  height: 688px;
+  position: absolute;
+  left: 50%;
+  bottom: -130px;
+  border-radius: 1000px;
+  opacity: 0.5;
+}
+
+.promo__block-two {
+  width: 560px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.promo__title {
+  padding: 1px;
+  background-color: #F8F8F8;
+}
+
+.promo__title .title {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.promo__form {
+  padding-top: 40px;
+  margin-left: 125px;
+}
+
+.text {
+  margin: 10px 0;
+  margin-right: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.text .text__color {
+  color: #428A60;
+}
+
+.form__name {
+  background-color: #F8F8F8;
+  padding: 23px 150px 23px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form__name:focus {
+  outline: 0;
+  border-color: #b4b4b4;
+}
+
+.input-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.number {
+  background-color: #F8F8F8;
+  padding: 0 5px 0 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.number:focus {
+  outline: 0;
+  border-color: #b4b4b4;
+}
+
+.ru {
+  margin: 7px 4px;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F8F8F8;
+  padding: 20px 13px 17px 20px;
+  margin: 0 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.select:focus {
+  outline: 0;
+  border-color: #b4b4b4;
+}
+
+.img-flag {
+  margin: 10px;
+}
+
+select {
+  background-color: #F8F8F8;
+  border: none;
+}
+
+select:focus {
+  outline: 0;
+  border-color: #F8F8F8;
+}
+
+.promo__button {
+  margin-top: 20px;
+}
+
+.promo__button .btn {
+  color: #ffffff;
+  background-color: #428A60;
+  padding: 5px 125px;
+  border: 2px solid #428A60;
+  border-radius: 5px;
+}
+
+.promo__button .btn .fa {
+  margin: 7px;
+}
+
+@media all and (max-width: 560px) {
+  .promo {
+    width: 100%;
+  }
+  .promo__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .promo__logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .promo__logo .logo__title {
+    color: #000;
+    font-size: 25px;
+    padding: 0 15px;
+  }
+  .promo__logo .logo__subtitle {
+    color: #000;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 58px;
+    padding-left: 230px;
+  }
+  .promo__block-one {
+    background-color: #ffffff;
+  }
+  .image {
+    width: 400px;
+  }
+  .circle__color {
+    display: block;
+    position: absolute;
+    top: 23%;
+    left: 106px;
+    width: 350px;
+    height: 350px;
+    border-radius: 180px;
+  }
+  .circle__border:after {
+    display: none;
+  }
+  .promo__title {
+    background-color: #ffffff;
+  }
+}
